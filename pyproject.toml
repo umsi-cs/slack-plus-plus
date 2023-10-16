@@ -1,0 +1,15 @@
+[project]
+name = "slack-plus-plus"
+description = "An augmented version of the Slack API Client for Python."
+requires-python = ">=3.10"
+authors = [
+  { name = "Violet Shreve", email = "shreve@umich.edu" }
+]
+dependencies = [
+  "slack-sdk"
+]
+dynamic = ['version', 'readme']
+
+[tool.setuptools.dynamic]
+version = { attr = "slack_plus.__version__" }
+readme = { file = "readme.md" }
