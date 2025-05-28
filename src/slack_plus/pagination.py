@@ -13,7 +13,7 @@ from .api import MethodMap
 
 key_map = {
     "conversations_history": "messages",
-    "conversations_list": "conversations",
+    "conversations_list": "channels",
     "conversations_members": "members",
     "conversations_replies": "messages",
     "files_info": "file",
@@ -29,7 +29,7 @@ def collect_keys(key: str, collection: SlackResponse) -> list[Any]:
 
     data = []
     for page in collection:
-        data += page[key]
+        data += page.data[key]
     return data
 
 
