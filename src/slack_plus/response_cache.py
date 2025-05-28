@@ -25,7 +25,7 @@ GET_METHODS = {
     "channels_replies",
     "chat_getPermalink",
     "conversations_declineSharedInvite",
-    "conversations_history",
+    # "conversations_history",
     "conversations_info",
     "conversations_list",
     "conversations_members",
